@@ -1,0 +1,35 @@
+{
+    "name": "sithu/useracl",
+    "description": "Simple User Management and ACL with spatie for laravel 5.5",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sithumaungmaung",
+            "email": "sithu.mm88@gmail.com"
+        }
+    ],
+    "autoload-dev": {
+        "classmap": [
+            "tests/DemoCase.php"
+        ]
+    },
+    "autoload": {
+        "psr-4": {
+            "Sithu\\UserAcl\\": "src/"
+        }
+    },
+    "require": {
+    	"illuminate/support": "~5",
+        "sithu/user-acl": "^1.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sithu\\UserAcl\\UserAclServiceProvider"
+            ],
+            "aliases": {
+                "UserAcl": "Sithu\\UserAcl\\UserAclFacade"
+            }
+        }
+    }
+}
