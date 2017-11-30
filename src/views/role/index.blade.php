@@ -1,7 +1,7 @@
 @extends('vendor.adminlte.layout')
 
 @section('heading')
-Role
+Role Sithu Create
 @endsection
 
 @section('content')

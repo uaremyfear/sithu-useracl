@@ -9,7 +9,7 @@ Route::get('/acl',function ()
 	return 'hreer';
 });
 
-Route::group(['middleware' => 'web'], function() {
+Route::group(['middleware' => ['web','role:SuperAdmin']], function() {
 	Route::get('/acl/hello','\Sithu\UserAcl\Http\Controllers\UserProfileController@testHello');
 
 	Route::get('/changemypassword','\Sithu\UserAcl\Http\Controllers\PasswordController@showChangePasswordForm');
