@@ -12,7 +12,7 @@ User
 
 <div class="box box-default">
 	<div class="box-header with-border">
-			<form class="form" role="form" method="POST" action="{{ url('/changepassword/user/' . $user->id ) }}">
+			<form class="form" role="form" method="POST" action="{{ route('userpassword.update',$user->id) }}">
 
 				{{ csrf_field() }}
 

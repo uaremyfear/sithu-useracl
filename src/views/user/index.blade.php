@@ -31,7 +31,7 @@ User
 						{{$role->name}} ,
 						@endforeach
 					</td>
-					<td><a href="/user/{{ $user->id }}/edit">Edit</a>  &nbsp;&nbsp;&nbsp;&nbsp;
+					<td><a href="{{ route('user.edit',$user->id) }}">Edit</a>  &nbsp;&nbsp;&nbsp;&nbsp;
 						<a href="changepassword/user/{{ $user->id }}">Change Password</a></td>
 					</tr> 
 					@endforeach

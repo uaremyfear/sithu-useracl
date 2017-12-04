@@ -164,6 +164,7 @@ class UserController extends Controller
 
         $user->password = bcrypt($request->password);
 
+        $user->save();
         // alert()->success('Success', 'Change Password Done');
 
         return redirect()->route('user.index');

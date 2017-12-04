@@ -13,7 +13,7 @@ User
 <div class="box box-default">
 	<div class="box-header with-border">
 		<div class="col-md-12">
-			<form class="form" role="form" method="POST" action="{{ url('changemypassword') }}">
+			<form class="form" role="form" method="POST" action="{{ route('change.password') }}">
 
 				{{ csrf_field() }}
 
