@@ -22,7 +22,7 @@
    }
    
   
-#    Add Classmap in Composer.json 
+# Add Classmap in Composer.json 
     
      "autoload": {
         "classmap": [
@@ -37,3 +37,7 @@
 # php artisan migrate
 
 # php artisan db:seed --class=Sithu\\UserAcl\\Seeds\\UserAclSeeder
+
+# php artisan vendor:publish choose Sithu-useracl
+
+# 'role' => \Spatie\Permission\Middlewares\RoleMiddleware::class,
