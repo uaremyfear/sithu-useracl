@@ -19,9 +19,9 @@ class UserAclServiceProvider extends ServiceProvider
 
 	public function boot()
 	{
-		// $this->publishes([
-		// 	__DIR__ . '/config' => config_path('')
-		// 	]);	
+		$this->publishes([
+			__DIR__ . '/config' => config_path('')
+			]);	
 
 		require __DIR__ . '/Http/routes.php';
 

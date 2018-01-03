@@ -9,7 +9,7 @@ Route::get('/acl',function ()
 	return 'hreer';
 });
 
-Route::group(['middleware' => ['web','role:SuperAdmin','auth'],'prefix'=>'dcjl'], function() {
+Route::group(['middleware' => ['web','role:SuperAdmin','auth'],'prefix'=> config('useracl-config.useracl.prefix') ], function() {
 	Route::resource('/role','\Sithu\UserAcl\Http\Controllers\RoleController');
 	Route::resource('/permission','\Sithu\UserAcl\Http\Controllers\PermissionController');
 	Route::resource('/user','\Sithu\UserAcl\Http\Controllers\UserController');
